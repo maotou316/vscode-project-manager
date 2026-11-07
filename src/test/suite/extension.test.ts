@@ -19,7 +19,7 @@ suite('Extension Test Suite', () => {
     vscode.window.showInformationMessage('Start all tests.');
 
     suiteSetup(() => {
-        extension = vscode.extensions.getExtension('maotou316.project-manager') as vscode.Extension<any>;
+        extension = vscode.extensions.getExtension('maotou316.project-manager-maotou') as vscode.Extension<any>;
     });
 
     test('Sample test', () => {

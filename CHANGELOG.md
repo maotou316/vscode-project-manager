@@ -1,3 +1,7 @@
+## [13.1.3] - 2026-11-07
+### Changed
+- Extension ID is now `maotou316.project-manager-maotou`, because the VS Code Marketplace requires a unique extension name
+
 ## [13.1.2] - 2026-11-07
 ### Added
 - Fork published as `maotou316.project-manager`, based on Project Manager 13.1.1 by Alessandro Fragnani

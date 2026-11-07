@@ -1,8 +1,8 @@
 {
-	"name": "project-manager",
+	"name": "project-manager-maotou",
 	"displayName": "Project Manager (Maotou)",
 	"description": "Easily switch between projects. Fork of Project Manager by Alessandro Fragnani, with drag and drop to assign tags",
-	"version": "13.1.2",
+	"version": "13.1.3",
 	"publisher": "maotou316",
 	"engines": {
 		"vscode": "^1.78.0"
@@ -654,7 +654,7 @@
 				{
 					"command": "_projectManager.whatsNewContextMenu",
 					"group": "projectManager",
-					"when": "extension == maotou316.project-manager && extensionStatus == installed"
+					"when": "extension == maotou316.project-manager-maotou && extensionStatus == installed"
 				}
 			],
 			"projectManager.sideBar.favorites.title": [
