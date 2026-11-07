@@ -1,9 +1,9 @@
 {
 	"name": "project-manager",
-	"displayName": "Project Manager",
-	"description": "Easily switch between projects",
-	"version": "13.1.1",
-	"publisher": "alefragnani",
+	"displayName": "Project Manager (Maotou)",
+	"description": "Easily switch between projects. Fork of Project Manager by Alessandro Fragnani, with drag and drop to assign tags",
+	"version": "13.1.2",
+	"publisher": "maotou316",
 	"engines": {
 		"vscode": "^1.78.0"
 	},
@@ -33,16 +33,13 @@
 	},
 	"icon": "docs/images/icon.png",
 	"license": "SEE LICENSE IN LICENSE.md",
-	"homepage": "https://github.com/alefragnani/vscode-project-manager/blob/master/README.md",
+	"homepage": "https://github.com/maotou316/vscode-project-manager/blob/release/maotou316/README.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/alefragnani/vscode-project-manager.git"
+		"url": "https://github.com/maotou316/vscode-project-manager.git"
 	},
 	"bugs": {
-		"url": "https://github.com/alefragnani/vscode-project-manager/issues"
-	},
-	"sponsor": {
-		"url": "https://github.com/sponsors/alefragnani"
+		"url": "https://github.com/maotou316/vscode-project-manager/issues"
 	},
 	"activationEvents": [
 		"onStartupFinished"
@@ -657,7 +654,7 @@
 				{
 					"command": "_projectManager.whatsNewContextMenu",
 					"group": "projectManager",
-					"when": "extension == alefragnani.project-manager && extensionStatus == installed"
+					"when": "extension == maotou316.project-manager && extensionStatus == installed"
 				}
 			],
 			"projectManager.sideBar.favorites.title": [

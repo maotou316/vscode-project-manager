@@ -1,6 +1,6 @@
-[![](https://vsmarketplacebadges.dev/version-short/alefragnani.project-manager.svg)](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-[![](https://vsmarketplacebadges.dev/downloads-short/alefragnani.project-manager.svg)](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-[![](https://vsmarketplacebadges.dev/rating-short/alefragnani.project-manager.svg)](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+> **This is a modified fork** of [Project Manager](https://github.com/alefragnani/vscode-project-manager) by Alessandro Fragnani, changed by maotou316 on 2026-11-07. It adds drag and drop to assign tags in the Favorites view. It is not an official release, so please report problems with this fork [here](https://github.com/maotou316/vscode-project-manager/issues).
+> 
+> It shares commands and settings with the original, so don't enable both at the same time. To keep your projects, copy `projects.json` from the original extension's storage folder, or point `projectManager.projectsLocation` to it.
 
 <p align="center">
   <br />

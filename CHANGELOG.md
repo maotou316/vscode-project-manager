@@ -1,3 +1,9 @@
+## [13.1.2] - 2026-11-07
+### Added
+- Fork published as `maotou316.project-manager`, based on Project Manager 13.1.1 by Alessandro Fragnani
+- Drag and drop projects onto tags in the Favorites view
+- Tags from `projectManager.tags` that no project uses yet are listed in the Tags view
+
 ## [13.1.1] - 2026-03-31
 ### Internal
 - Failed publishing on open-vsx (issue [#920](https://github.com/alefragnani/vscode-project-manager/issues/920))
