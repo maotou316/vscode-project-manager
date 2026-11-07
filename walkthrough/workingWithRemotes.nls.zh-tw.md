@@ -1,20 +1,20 @@
-## 使用遠程工作
+## 使用遠端
 
-該擴展支持 [遠程開發](https://code.visualstudio.com/docs/remote/remote-overview) 場景，您可以根據需要選擇如何使用它。
+此擴充功能支援[遠端開發](https://code.visualstudio.com/docs/remote/remote-overview)情境，您可依需求選擇使用方式
 
-### 我訪問遠程，但我的大部分工作是本地的
+### 我會存取遠端，但大部分工作在本機進行
 
-這是 _常規_ 場景，這就是為什麽您不需要執行任何特殊操作即可使擴展正常工作。 它開箱即用。
+這是_一般_情境，因此不需要任何特殊操作，擴充功能即可運作，開箱即用。
 
-在本地安裝時，您可以將任何 Container、SSH、WSL 或 Codespaces 項目保存為收藏夾。 每一個都有自己的圖標來正確識別，當您選擇它們時，VS Code 將自動打開遠程項目。
+在本機安裝時，您可以將任何 Container、SSH、WSL 或 Codespaces 專案儲存為我的最愛。每一個都有各自的圖示以便辨識，選取後 VS Code 會自動開啟該遠端。
 
-_它確實有效_
+_直接就能用_
 
-### 但是如果我的大部分工作都是在遠程上完成怎麽辦
+### 但如果我大部分工作都在遠端進行
 
-如果您通常連接到遠程設備（例如 SSH/WSL）並希望在該遠程設備上保存收藏夾項目，或者能夠自動檢測位於該遠程設備上的存儲庫，則必須激活/安裝該擴展才能在遠程設備上工作。
+如果您通常連線到遠端（例如 SSH/WSL），並希望在該遠端儲存我的最愛專案，或能自動偵測位於該遠端的存放庫，就必須啟用／安裝擴充功能，使其在遠端運作。
 
-您只需在“用戶設置”中添加以下行即可。
+您只需將以下內容加入「使用者設定」。
 
 ```json
     "remote.extensionKind": {
@@ -24,4 +24,4 @@ _它確實有效_
     },
 ```
 
-> 更多詳細信息在 [VS Code documentation](https://code.visualstudio.com/docs/remote/containers#_advanced-forcing-an-extension-to-run-locally-or-remotely)
+> 更多詳細資訊請參閱 [VS Code 官方說明](https://code.visualstudio.com/docs/remote/containers#_advanced-forcing-an-extension-to-run-locally-or-remotely)

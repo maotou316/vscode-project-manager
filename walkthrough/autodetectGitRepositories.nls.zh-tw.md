@@ -1,6 +1,6 @@
-## 自動檢測 Git 存儲庫
+## 自動偵測 Git 存放庫
 
-只需使用項目所在的文件夾定義 `baseFolders` 設置，擴展就會顯示其中的所有 Git 項目。 如果您需要忽略任何子文件夾，可以使用 `glob` 模式來做到這一點
+只要使用專案所在的資料夾定義 `baseFolders` 設定，擴充功能就會顯示其中所有的 Git 專案。如果需要忽略任何子資料夾，可以使用 `glob` 模式來達成
 
 ```json
     "projectManager.git.baseFolders": [

@@ -9,8 +9,8 @@ import { Container } from "../core/container";
 export function registerSupportProjectManager() {
     Container.context.subscriptions.push(commands.registerCommand("projectManager.supportProjectManager", async () => {
         const actions: MessageItem[] = [
-            { title: 'Become a Sponsor' },
-            { title: 'Donate via PayPal' }
+            { title: l10n.t('Become a Sponsor') },
+            { title: l10n.t('Donate via PayPal') }
         ];
         const option = await window.showInformationMessage(l10n.t(`While Project Manager is offered for free, if you 
         find it useful, please consider supporting it. Thank you!`), ...actions);

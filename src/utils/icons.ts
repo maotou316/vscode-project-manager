@@ -3,6 +3,7 @@
 *  Licensed under the GPLv3 License. See License.md in the project root for license information.
 *--------------------------------------------------------------------------------------------*/
 
+import { l10n } from "vscode";
 import path = require("path");
 import { IconPath, Uri, workspace } from "vscode";
 import { codicons } from "vscode-ext-codicons";
@@ -69,7 +70,7 @@ export function getIconDetailsFromProjectPath(projectPath: string): TooltipIconI
     if (projectPath.startsWith(`${REMOTE_PREFIX}://dev-container`)) {
         return {
             icon: codicons.symbol_method,
-            title: "Container"
+            title: l10n.t("Container")
         };
     }
     if (projectPath.startsWith(`${REMOTE_PREFIX}://ssh`)) {
@@ -87,17 +88,17 @@ export function getIconDetailsFromProjectPath(projectPath: string): TooltipIconI
     if (projectPath.startsWith(`${VIRTUAL_WORKSPACE_PREFIX}://`)) {
         return {
             icon: codicons.remote,
-            title: "Virtual Workspace"
+            title: l10n.t("Virtual Workspace")
         };
     }
     if (path.extname(projectPath) === ".code-workspace") {
         return {
             icon: codicons.root_folder,
-            title: "Workspace"
+            title: l10n.t("Workspace")
         };
     }
     return {
         icon: codicons.folder,
-        title: "Folder"
+        title: l10n.t("Folder")
     };
 }

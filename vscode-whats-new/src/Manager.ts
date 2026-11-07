@@ -91,7 +91,7 @@ export class WhatsNewManager {
 
         // Create and show panel
         const panel = vscode.window.createWebviewPanel(`${this.extensionName}.whatsNew`,
-            `What's New in ${this.extension.packageJSON.displayName}`, vscode.ViewColumn.One, { enableScripts: true });
+            `${this.extension.packageJSON.displayName} 的新功能`, vscode.ViewColumn.One, { enableScripts: true });
 
         // Path to HTML
         const onDiskPath = vscode.Uri.joinPath(this.context.extensionUri, "vscode-whats-new", "ui", "whats-new.html");
@@ -187,12 +187,12 @@ export class WhatsNewManager {
 
     private async showUpdateNotification(): Promise<void> {
         const extensionDisplayName = this.extension.packageJSON.displayName ?? this.extensionName;
-        const showWhatsNewLabel = "See What's New";
+        const showWhatsNewLabel = "查看新功能";
         const detailMessage = this.updateNotificationDetailMessage
             ? ` ${this.updateNotificationDetailMessage}`
             : "";
         const selection = await vscode.window.showInformationMessage(
-            `${extensionDisplayName} was updated to version ${this.extension.packageJSON.version}.${detailMessage}`,
+            `${extensionDisplayName} 已更新至 ${this.extension.packageJSON.version} 版。${detailMessage}`,
             showWhatsNewLabel
         );
 

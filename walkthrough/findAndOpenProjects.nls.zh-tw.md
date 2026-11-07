@@ -1,11 +1,11 @@
-## 查找並打開項目
+## 尋找並開啟專案
 
-你可以使用 `Project Manager: List Projects to Open` 命令或側邊欄快速訪問所有項目。
+您可以在**命令選擇區**中使用 `Project Manager: List Projects to Open` 命令，或透過專屬的**側邊欄**，快速存取所有專案。
 
-要通過**命令面板**訪問項目，您還可以使用內置鍵盤快捷鍵 <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> / <kbd>Cmd</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> (在 MacOS 上)。
+若要透過**命令選擇區**存取專案，也可以使用內建的鍵盤快速鍵 <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> / <kbd>Cmd</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>（macOS）。
 
-可以按項目名稱或路徑過濾項目。
+專案可依名稱或路徑篩選。
 
-### 命令面板
+### 命令選擇區
 
-![列表](../docs/images/project-manager-list-sort-by-name.png)
+![List](../docs/images/project-manager-list-sort-by-name.png)

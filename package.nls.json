@@ -120,5 +120,17 @@
     "projectManager.walkthroughs.exclusiveSideBar.title": "Exclusive Side Bar",
     "projectManager.walkthroughs.exclusiveSideBar.description": "An exclusive Side Bar with everything you need for great productivity.\n[Open Side Bar](command:_projectManager.openSideBar)",
     "projectManager.walkthroughs.workingWithRemotes.title": "Working with Remotes",
-    "projectManager.walkthroughs.workingWithRemotes.description": "The extension support [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) scenarios, and you may choose how to use it, depending on your needs."
+    "projectManager.walkthroughs.workingWithRemotes.description": "The extension support [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) scenarios, and you may choose how to use it, depending on your needs.",
+    "projectManager.openInCurrenWindowIfEmpty.enumDescriptions.0": "Whenever you call the Open in New Window command, it will open in the current window, if empty",
+    "projectManager.openInCurrenWindowIfEmpty.enumDescriptions.1": "Only open in the current window if you use the Command Palette",
+    "projectManager.openInCurrenWindowIfEmpty.enumDescriptions.2": "Only open in the current window if you use the Side Bar",
+    "projectManager.openInCurrenWindowIfEmpty.enumDescriptions.3": "Works as today. The Open in New Window command will always open in New Window",
+    "projectManager.openInCurrentWindowIfEmpty.enumDescriptions.0": "Whenever you call the Open in New Window command, it will open in the current window, if empty",
+    "projectManager.openInCurrentWindowIfEmpty.enumDescriptions.1": "Only open in the current window if you use the Command Palette",
+    "projectManager.openInCurrentWindowIfEmpty.enumDescriptions.2": "Only open in the current window if you use the Side Bar",
+    "projectManager.openInCurrentWindowIfEmpty.enumDescriptions.3": "Works as today. The Open in New Window command will always open in New Window",
+    "projectManager.confirmSwitchOnActiveWindow.enumDescriptions.0": "Works as today. No confirmation is required",
+    "projectManager.confirmSwitchOnActiveWindow.enumDescriptions.1": "Only ask for confirmation if you use the Command Palette",
+    "projectManager.confirmSwitchOnActiveWindow.enumDescriptions.2": "Only ask for confirmation if you use the Side Bar",
+    "projectManager.confirmSwitchOnActiveWindow.enumDescriptions.3": "Whenever you call the Open command, it will ask for confirmation"
 }

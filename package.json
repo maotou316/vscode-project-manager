@@ -1,8 +1,8 @@
 {
 	"name": "project-manager-maotou",
 	"displayName": "Project Manager (Maotou)",
-	"description": "Easily switch between projects. Fork of Project Manager by Alessandro Fragnani, with drag and drop to assign tags",
-	"version": "13.1.3",
+	"description": "輕鬆切換專案。修改自 Alessandro Fragnani 的 Project Manager，新增拖放指派標籤功能",
+	"version": "13.1.4",
 	"publisher": "maotou316",
 	"engines": {
 		"vscode": "^1.78.0"
@@ -772,10 +772,10 @@
 							"never"
 						],
 						"enumDescriptions": [
-							"Whenever you call the Open in New Window command, it will open in the current window, if empty",
-							"Only open in the current window if you use the Command Palette",
-							"Only open in the current window if you use the Side Bar",
-							"Works as today. The Open in New Window command will always open in New Window"
+							"%projectManager.openInCurrenWindowIfEmpty.enumDescriptions.0%",
+							"%projectManager.openInCurrenWindowIfEmpty.enumDescriptions.1%",
+							"%projectManager.openInCurrenWindowIfEmpty.enumDescriptions.2%",
+							"%projectManager.openInCurrenWindowIfEmpty.enumDescriptions.3%"
 						],
 						"description": "%projectManager.configuration.openInCurrenWindowIfEmpty.description%",
 						"deprecationMessage": "%projectManager.configuration.openInCurrenWindowIfEmpty.deprecation%"
@@ -790,10 +790,10 @@
 							"never"
 						],
 						"enumDescriptions": [
-							"Whenever you call the Open in New Window command, it will open in the current window, if empty",
-							"Only open in the current window if you use the Command Palette",
-							"Only open in the current window if you use the Side Bar",
-							"Works as today. The Open in New Window command will always open in New Window"
+							"%projectManager.openInCurrentWindowIfEmpty.enumDescriptions.0%",
+							"%projectManager.openInCurrentWindowIfEmpty.enumDescriptions.1%",
+							"%projectManager.openInCurrentWindowIfEmpty.enumDescriptions.2%",
+							"%projectManager.openInCurrentWindowIfEmpty.enumDescriptions.3%"
 						],
 						"description": "%projectManager.configuration.openInCurrentWindowIfEmpty.description%"
 					},
@@ -807,10 +807,10 @@
 							"always"
 						],
 						"enumDescriptions": [
-							"Works as today. No confirmation is required",
-							"Only ask for confirmation if you use the Command Palette",
-							"Only ask for confirmation if you use the Side Bar",
-							"Whenever you call the Open command, it will ask for confirmation"
+							"%projectManager.confirmSwitchOnActiveWindow.enumDescriptions.0%",
+							"%projectManager.confirmSwitchOnActiveWindow.enumDescriptions.1%",
+							"%projectManager.confirmSwitchOnActiveWindow.enumDescriptions.2%",
+							"%projectManager.confirmSwitchOnActiveWindow.enumDescriptions.3%"
 						],
 						"description": "%projectManager.configuration.confirmSwitchOnActiveWindow.description%"
 					},
@@ -1066,7 +1066,7 @@
 						"title": "%projectManager.walkthroughs.autoDetectGitRepositories.title%",
 						"description": "%projectManager.walkthroughs.autoDetectGitRepositories.description%",
 						"media": {
-							"markdown": "walkthrough/autoDetectGitRepositories.md"
+							"markdown": "walkthrough/autodetectGitRepositories.md"
 						}
 					},
 					{

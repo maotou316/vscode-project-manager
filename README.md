@@ -1,30 +1,30 @@
-> **This is a modified fork** of [Project Manager](https://github.com/alefragnani/vscode-project-manager) by Alessandro Fragnani, changed by maotou316 on 2026-11-07. It adds drag and drop to assign tags in the Favorites view. It is not an official release, so please report problems with this fork [here](https://github.com/maotou316/vscode-project-manager/issues).
+> **這是修改版分支（fork）**，源自 Alessandro Fragnani 的 [Project Manager](https://github.com/alefragnani/vscode-project-manager)，由 maotou316 於 2026-11-07 修改。新增在「我的最愛」檢視中以拖放方式指派標籤的功能。這不是官方發行版，若此分支有任何問題，請[在此](https://github.com/maotou316/vscode-project-manager/issues)回報。
 > 
-> It shares commands and settings with the original, so don't enable both at the same time. To keep your projects, copy `projects.json` from the original extension's storage folder, or point `projectManager.projectsLocation` to it.
+> 本分支與原版共用命令與設定，因此請勿同時啟用兩者。若要保留您的專案，請從原版擴充功能的儲存資料夾複製 `projects.json`，或將 `projectManager.projectsLocation` 指向該資料夾。
 
 <p align="center">
   <br />
-  <a title="Learn more about Project Manager" href="https://github.com/alefragnani/vscode-project-manager"><img src="https://raw.githubusercontent.com/alefragnani/vscode-project-manager/master/images/vscode-project-manager-logo-readme.png" alt="Project Manager Logo" width="70%" /></a>
+  <a title="深入瞭解 Project Manager" href="https://github.com/alefragnani/vscode-project-manager"><img src="https://raw.githubusercontent.com/alefragnani/vscode-project-manager/master/images/vscode-project-manager-logo-readme.png" alt="Project Manager Logo" width="70%" /></a>
 </p>
 
-English | [简体中文](README.zh-CN.md)
+繁體中文 | [简体中文](README.zh-CN.md) | [English](https://github.com/alefragnani/vscode-project-manager#readme)
 
-# What's new in Project Manager 13.1
+# Project Manager 13.1 新功能
 
-* Improved **Tags** support
-* Improved **auto-detected projects** support
-* Fully Open Source again
-* Adds **Profile** support
-* Highlights the current project in the Side Bar
-* Published to **Open VSX**
-* Adds **Getting Started / Walkthrough**
-* Organize your projects with **Tags**
-* Adds **Virtual Workspaces** support
-* Adds **Workspace Trust** support
+* 改進**標籤**支援
+* 改進**自動偵測專案**支援
+* 再度完全開源
+* 新增**設定檔**支援
+* 在側邊欄醒目標示目前專案
+* 已發佈至 **Open VSX**
+* 新增**快速入門／逐步導覽**
+* 使用**標籤**整理您的專案
+* 新增**虛擬工作區**支援
+* 新增**工作區信任**支援
 
-# Support
+# 贊助
 
-**Project Manager** is an extension created for **Visual Studio Code**. If you find it useful, please consider supporting it.
+**Project Manager（專案管理員）** 是為 **Visual Studio Code** 所開發的擴充功能。若您覺得好用，歡迎贊助。
 
 <table align="center" width="60%" border="0">
   <tr>
@@ -42,43 +42,43 @@ English | [简体中文](README.zh-CN.md)
 
 # Project Manager
 
-It helps you to easily access your **projects**, no matter where they are located. _Don't miss those important projects anymore_. 
+它能讓您輕鬆存取**專案**，無論專案位於何處。_再也不會錯過重要的專案_。
 
-You can define your own **Projects** (also called **Favorites**), or choose for auto-detect **Git**, **Mercurial** or **SVN** repositories, **VSCode** folders, or **any** other folder.
+您可以自行定義**專案**（也稱為**我的最愛**），或選擇自動偵測 **Git**、**Mercurial** 或 **SVN** 存放庫、**VSCode** 資料夾，或**任何**其他資料夾。
 
-Here are some of the features that **Project Manager** provides:
+以下是 **Project Manager** 提供的部分功能：
 
-* Save any folder or workspace as a **Project**
-* Auto-detect **Git**, **Mercurial** or **SVN** repositories
-* Organize your projects using **Tags**
-* Open projects in the same or new window
-* Identify _deleted/renamed_ projects
-* A **Status Bar** which identifies the current project
-* A dedicated **Side Bar**
+* 將任何資料夾或工作區儲存為**專案**
+* 自動偵測 **Git**、**Mercurial** 或 **SVN** 存放庫
+* 使用**標籤**整理專案
+* 在目前視窗或新視窗開啟專案
+* 辨識_已刪除／已重新命名_的專案
+* 以**狀態列**顯示目前專案
+* 專屬的**側邊欄**
 
-# Features
+# 功能
 
-## Available Commands
+## 可用命令
 
-* `Project Manager: Save Project` Save the current folder/workspace as a new project
-* `Project Manager: Edit Project` Edit your projects manually (`projects.json`)
-* `Project Manager: List Projects to Open` List all saved/detected projects and pick one
-* `Project Manager: List Projects to Open in New Window` List all saved/detected projects and pick one to be opened in New Window
-* `Project Manager: Filter Projects by Tag` Filter the Favorite projects by selected tags
+* `Project Manager: Save Project` 將目前的資料夾／工作區儲存為新專案
+* `Project Manager: Edit Project` 手動編輯您的專案（`projects.json`）
+* `Project Manager: List Projects to Open` 列出所有已儲存／已偵測的專案，並選擇一個
+* `Project Manager: List Projects to Open in New Window` 列出所有已儲存／已偵測的專案，並選擇一個在新視窗開啟
+* `Project Manager: Filter Projects by Tag` 依所選標籤篩選我的最愛專案
 
-## Manage your projects
+## 管理您的專案
 
-### Save Project
+### 儲存專案
 
-You can save the current folder/workspace as a **Project** at any time. You just need to type its name. 
+您可以隨時將目前的資料夾／工作區儲存為**專案**，只需輸入名稱即可。
 
 ![Save](docs/images/project-manager-save.png)
 
-> It suggests a name to you _automatically_ :)
- 
-### Edit Projects
+> 它會_自動_建議名稱給您 :)
 
-For easier customization of your project list, you can edit the `projects.json` file, directly inside **Code**. Just execute `Project Manager: Edit Projects` and the `projects.json` file is opened. Simple as this:
+### 編輯專案
+
+為了更方便自訂專案清單，您可以直接在 **Code** 內編輯 `projects.json` 檔案。只要執行 `Project Manager: Edit Projects`，就會開啟 `projects.json` 檔案。就是這麼簡單：
 
 ```json
 [
@@ -112,27 +112,27 @@ For easier customization of your project list, you can edit the `projects.json` 
 ]
 ```
 
-> You can use `~` or `$home` while defining any path. It will be replaced by your HOME folder.
+> 定義任何路徑時，您都可以使用 `~` 或 `$home`，它會被取代為您的家目錄（HOME）資料夾。
 
-> Be sure that the JSON file is well-formed. Otherwise, **Project Manager** will not be able to open it, and an error message like this should appear. In this case, you should use the `Open File` button to fix it.
+> 請確保 JSON 檔案格式正確。否則 **Project Manager** 將無法開啟，並會出現如下的錯誤訊息。此時，請使用「開啟檔案」（`Open File`）按鈕來修正。
 
 ![Corrupted](docs/images/project-manager-edit-corrupted-projectsJson.png)
 
-## Access 
+## 存取
 
-### List Projects to Open
+### 列出要開啟的專案
 
-Shows your projects and select one to open.
+顯示您的專案，並選擇一個開啟。
 
-### List Projects to Open in New Window
+### 列出要在新視窗開啟的專案
 
-Just like **List Projects** but always opening in **New Window**.
+與**列出專案**相同，但一律在**新視窗**開啟。
 
-## Keyboard Focused Users
+## 偏好鍵盤操作的使用者
 
-If you are a keyboard focused user and uses _Vim like_ keyboard navigation, you can navigate thru the project list with your own keybindings. 
+如果您偏好使用鍵盤，並且習慣_類似 Vim_ 的鍵盤導覽，可以用自己的快速鍵在專案清單中移動。
 
-Just use the `when` clause `"inProjectManagerList"`, like:
+只要使用 `when` 子句 `"inProjectManagerList"`，例如：
 
 ```json
     {
@@ -157,23 +157,23 @@ Just use the `when` clause `"inProjectManagerList"`, like:
     }
 ```
 
-## Working with Remotes
+## 搭配遠端使用
 
-The extension support [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) scenarios, and you may choose how to use it, depending on your needs
+本擴充功能支援 [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) 情境，您可以依需求選擇使用方式。
 
-### I access Remotes, but most of my work is Local
+### 我會連線到遠端，但大部分工作在本機
 
-This is the _regular_ scenario, and that's why you don't need to do anything special for the extension to work. It works out of the box.
+這是_一般_情境，因此您不需要做任何特別設定，擴充功能即可使用，開箱即用。
 
-When installed locally, you can save any Container, SSH, WSL or Codespaces projects as Favorites. Each one will have its own icon to be properly identified, and when you select them, VS Code will open the remote automatically.
+在本機安裝時，您可以將任何 Container、SSH、WSL 或 Codespaces 專案儲存為我的最愛。每一種都有專屬圖示以便辨識，選取後 VS Code 會自動開啟該遠端。
 
-_It just works_
+_就是這麼順利_
 
-### But what if I do most of my work on Remotes
+### 但如果我大部分工作都在遠端
 
-If you normally connect to remotes (like SSH/WSL) and would like to save Favorite projects on that remote, or to be able to auto-detect repos located on that remote, you must activate/install the extension to work on remotes. 
+如果您平常連線到遠端（例如 SSH/WSL），並希望將我的最愛專案儲存在該遠端，或能自動偵測位於該遠端的存放庫，就必須在遠端啟用／安裝此擴充功能。
 
-You just have to add the lines below on your `User Settings`.
+只要將以下內容加入您的 `User Settings`（使用者設定）即可。
 
 ```json
     "remote.extensionKind": {
@@ -183,16 +183,16 @@ You just have to add the lines below on your `User Settings`.
     },
 ```
 
-> More details on [VS Code documentation](https://code.visualstudio.com/docs/remote/containers#_advanced-forcing-an-extension-to-run-locally-or-remotely)
+> 更多詳細資訊請參閱 [VS Code 說明文件](https://code.visualstudio.com/docs/remote/containers#_advanced-forcing-an-extension-to-run-locally-or-remotely)
 
-## Available Settings
+## 可用設定
 
-You can choose how your projects are sorted
+您可以選擇專案的排序方式
 
-* `Saved`: The order that you saved the projects
-* `Name`: The name that you typed for the project
-* `Path`: The full path of the project
-* `Recent`: The recently used projects
+* `Saved`：依儲存專案的順序
+* `Name`：依您為專案輸入的名稱
+* `Path`：依專案的完整路徑
+* `Recent`：依最近使用的專案
 
 ```json
     "projectManager.sortList": "Name"
@@ -200,53 +200,53 @@ You can choose how your projects are sorted
 
 ![List](docs/images/project-manager-list-sort-by-name.png)
 
-* Choose if the project list must be grouped by its _kind_ (**Favorites**, **Git**, **Mercurial**, **SVN** and **VS Code**).
+* 選擇專案清單是否依_類型_分組（**我的最愛**、**Git**、**Mercurial**、**SVN** 與 **VS Code**）。
 
 ```json
     "projectManager.groupList": true
 ```
 
-* Should the current project be removed from the list? (`false` by default)
+* 是否從清單中移除目前專案？（預設為 `false`）
 
 ```json
     "projectManager.removeCurrentProjectFromList": true
 ```
 
-* Should identify _invalid paths_ on project list? (`true` by default)
+* 是否在專案清單中辨識_無效路徑_？（預設為 `true`）
 
 ```json 
     "projectManager.checkInvalidPathsBeforeListing": false
 ```
 
-* Should support symlinks on `baseFolders`? (`false` by default)
+* 是否支援 `baseFolders` 中的符號連結？（預設為 `false`）
 
 ```json 
     "projectManager.supportSymlinksOnBaseFolders": true
 ```
 
-* Should show the parent folder info when projects with same name are detected? (`false` by default)
+* 偵測到同名專案時，是否顯示上層資料夾資訊？（預設為 `false`）
 
 ```json 
     "projectManager.showParentFolderInfoOnDuplicates": true
 ```
 
-* Filter Projects Through Full Path (`false` by default)
+* 透過完整路徑篩選專案（預設為 `false`）
 
 ```json 
     "projectManager.filterOnFullPath": true
 ```
 
-* Custom projects file (`projects.json`) location
+* 自訂專案檔案（`projects.json`）位置
 
-If you intend to _share_ projects between  **Stable** and **Insider** installations, or if you store your settings in different locations (cloud services), you can indicate an _alternative_ location (folder path) for the `projects.json` file.
+如果您打算在 **Stable** 與 **Insider** 安裝之間_共用_專案，或將設定儲存在不同位置（雲端服務），可以為 `projects.json` 檔案指定_替代_位置（資料夾路徑）。
 
 ```json
     "projectManager.projectsLocation": "C:\\Users\\myUser\\AppData\\Roaming\\Code\\User"
 ```
 
-> You can use `~` or `$home` while defining the folder path. It will be replaced by your HOME folder.
+> 定義資料夾路徑時，您可以使用 `~` 或 `$home`，它會被取代為您的家目錄（HOME）資料夾。
 
-* Automatic Detection of Projects (**Git** ![git](docs/images/ico_git_branch.png), **Mercurial** ![git](docs/images/ico_git_branch.png), **SVN** ![svn](docs/images/ico_svn.png) and **VSCode** ![vscode](docs/images/ico_file_code.png))
+* 自動偵測專案（**Git** ![git](docs/images/ico_git_branch.png), **Mercurial** ![git](docs/images/ico_git_branch.png), **SVN** ![svn](docs/images/ico_svn.png) and **VSCode** ![vscode](docs/images/ico_file_code.png))
 
 ```json
     "projectManager.git.baseFolders": [
@@ -255,7 +255,7 @@ If you intend to _share_ projects between  **Stable** and **Insider** installati
         "$home\\personal-coding"
     ]
 ```
-> Indicates folders or [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) to search for projects
+> 指定要搜尋專案的資料夾或 [glob 模式](https://code.visualstudio.com/docs/editor/glob-patterns)
 
 ```json
     "projectManager.git.ignoredFolders": [
@@ -266,56 +266,56 @@ If you intend to _share_ projects between  **Stable** and **Insider** installati
         "fork*"
     ],
 ```
-> Indicates folders or [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) to be ignored when searching for projects
+> 指定搜尋專案時要忽略的資料夾或 [glob 模式](https://code.visualstudio.com/docs/editor/glob-patterns)
 
 ```json
     "projectManager.git.maxDepthRecursion": 4
 ```
-> Define how deeps it should search for projects
+> 定義搜尋專案的遞迴深度
 
-* Exclude the base folders themselves from the auto-detected projects list (`false` by default)
+* 將基底資料夾本身排除於自動偵測的專案清單之外（預設為 `false`）
 
 ```json
     "projectManager.any.excludeBaseFoldersFromResults": true
 ```
-> When enabled, the **Any** base folders configured in `projectManager.any.baseFolders` are not returned as projects themselves, only their matching subfolders are.
+> 啟用後，`projectManager.any.baseFolders` 中設定的 **Any** 基底資料夾本身不會被視為專案，只會回傳其符合條件的子資料夾。
 
-* Should ignore projects found inside other projects? (`false` by default)
+* 是否忽略位於其他專案內的專案？（預設為 `false`）
 
 ```json 
     "projectManager.ignoreProjectsWithinProjects": true
 ```
 
-* Cache automatically detected projects (`true` by default)
+* 快取自動偵測到的專案（預設為 `true`）
 
 ```json 
     "projectManager.cacheProjectsBetweenSessions": false
 ```
 
-* Display the Project Name in Status Bar (`true` by default)
+* 在狀態列顯示專案名稱（預設為 `true`）
 
 ```json 
     "projectManager.showProjectNameInStatusBar": true
 ```
 
-* Open projects in _New Window_ when clicking in status bar (`false` by default)
+* 點擊狀態列時在_新視窗_開啟專案（預設為 `false`）
 
 ```json 
     "projectManager.openInNewWindowWhenClickingInStatusBar": true
 ```
 
-* Indicates if the `New Window` command should open the project in current window, when empty (`always` by default)
+* 指定當目前視窗為空時，`New Window` 命令是否改在目前視窗開啟專案（預設為 `always`）
 
-  * `always`: Whenever you call the Open in New Window command, it will open in the current window, if empty
-  * `onlyUsingCommandPalette`: Only open in the current window if you use the Command Palette
-  * `onlyUsingSideBar`: Only open in the current window if you use the Side Bar
-  * `never`: Works as today. The Open in New Window command will always open in New Window
+  * `always`：每當呼叫「在新視窗開啟」命令時，若目前視窗為空，就在目前視窗開啟
+  * `onlyUsingCommandPalette`：僅在使用命令選擇區時，才在目前視窗開啟
+  * `onlyUsingSideBar`：僅在使用側邊欄時，才在目前視窗開啟
+  * `never`：維持現行行為，「在新視窗開啟」命令一律在新視窗開啟
 
 ```json 
     "projectManager.openInCurrentWindowIfEmpty": "always"
 ```
 
-* Indicates the list of tags you can use to organize your projects _(`Personal` and `Work` by default)_
+* 指定可用來整理專案的標籤清單_（預設為 `Personal` 與 `Work`）_
 
 ```json
     "projectManager.tags": [
@@ -326,60 +326,60 @@ If you intend to _share_ projects between  **Stable** and **Insider** installati
     ]
 ```
 
-* Controls how tag groups in the Favorites view are expanded or collapsed, and whether their state is remembered (`startExpanded` by default)
+* 控制「我的最愛」檢視中標籤群組的展開或收合方式，以及是否記住其狀態（預設為 `startExpanded`）
 
-  * `alwaysExpanded`: Tag groups are always expanded
-  * `alwaysCollapsed`: Tag groups are always collapsed
-  * `startExpanded`: Tag groups start expanded and remember your last expand/collapse state
-  * `startCollapsed`: Tag groups start collapsed and remember your last expand/collapse state
+  * `alwaysExpanded`：標籤群組一律展開
+  * `alwaysCollapsed`：標籤群組一律收合
+  * `startExpanded`：標籤群組初始為展開，並記住您上次的展開／收合狀態
+  * `startCollapsed`：標籤群組初始為收合，並記住您上次的展開／收合狀態
 
 ```json
     "projectManager.tags.collapseItems": "startExpanded"
 ```
 
-* Show the current Git branch name for projects (`"never"` by default)
+* 顯示專案目前的 Git 分支名稱（預設為 `"never"`）
 
 ```json
     "projectManager.git.showBranchName": "never"
 ```
 
-Supported values:
-- `"never"`: Never display the Git branch name
-- `"onlyInSideBar"`: Display the Git branch name only in the Side Bar
-- `"onlyInCommandPalette"`: Display the Git branch name only in the Command Palette
-- `"always"`: Display the Git branch name in all locations
+可用的值：
+- `"never"`：一律不顯示 Git 分支名稱
+- `"onlyInSideBar"`：僅在側邊欄顯示 Git 分支名稱
+- `"onlyInCommandPalette"`：僅在命令選擇區顯示 Git 分支名稱
+- `"always"`：在所有位置顯示 Git 分支名稱
 
 
-## Available Colors
+## 可用顏色
 
-* Choose the foreground color to highlight the current project in the Side Bar
+* 選擇在側邊欄醒目標示目前專案的前景色
 ```json
     "workbench.colorCustomizations": {
       "projectManager.sideBar.currentProjectHighlightForeground": "#e13015"  
     }
 ```
 
-## Side Bar
+## 側邊欄
 
-The **Project Manager** extension has its own **Side Bar**, with a variety of commands to improve your productivity. 
+**Project Manager** 擴充功能有專屬的**側邊欄**，提供多種命令以提升您的工作效率。
 
 ![Side Bar](docs/images/vscode-project-manager-side-bar.png)
 
-### Project Tags - View and Filter
+### 專案標籤：檢視與篩選
 
-Starting in v12.3, you can now organize your Projects with **Tags**. 
+自 v12.3 起，您可以使用**標籤**整理專案。
 
-You can define your custom tags (via `projectManager.tags` setting), define multiple **tags** for each project, and filter the projects based on their **tags**. 
+您可以定義自訂標籤（透過 `projectManager.tags` 設定）、為每個專案指定多個**標籤**，並依**標籤**篩選專案。
 
-In the **Favorites** view, while viewing as tags, you can also drag a project and drop it on a tag to add that tag to the project. Its other tags are kept.
+在**我的最愛**檢視中，以標籤方式檢視時，您也可以將專案拖放到某個標籤上，為該專案加上此標籤，其原有的其他標籤會保留。
 
 ![Side Bar](docs/images/vscode-project-manager-side-bar-tags.gif)
 
-## Extension API
+## 擴充功能 API
 
-If you are an extension developer and would like to interact with the **Project Manager** extension, you can use its public API. 
+如果您是擴充功能開發者，並想與 **Project Manager** 擴充功能互動，可以使用其公開 API。
 
-First, you must add an `extensionDependencies` entry in your `package.json` file:
+首先，必須在 `package.json` 檔案中加入 `extensionDependencies` 欄位：
 
 ```json
   "extensionDependencies": [
@@ -387,7 +387,7 @@ First, you must add an `extensionDependencies` entry in your `package.json` file
   ],
 ```
 
-Then, retrieve the extension instance with `vscode.extensions.getExtension("alefragnani.project-manager")` in your source code, to be able to use the methods that the extension exposes.
+接著，在原始碼中以 `vscode.extensions.getExtension("alefragnani.project-manager")` 取得擴充功能實例，即可使用該擴充功能公開的方法。
 
 ```ts
 import { ProjectManagerPublicApi } from './api/projectManager/api';
@@ -399,17 +399,17 @@ async function useProjectManagerApi() {
 }
 ```
 
-The contract is defined at [/api/api.d.ts](/api/api.d.ts).
+其介面合約定義於 [/api/api.d.ts](/api/api.d.ts)。
 
-> More details on [VS Code Extension API reference](https://code.visualstudio.com/api/references/vscode-api#extensions)
+> 更多詳細資訊請參閱 [VS Code Extension API 參考文件](https://code.visualstudio.com/api/references/vscode-api#extensions)
 
-## Installation and Configuration
+## 安裝與設定
 
-You should follow the official documentation to:
+請依照官方文件進行：
 
-- [Install the extension](https://code.visualstudio.com/docs/editor/extension-gallery)
-- [Modify its settings](https://code.visualstudio.com/docs/getstarted/settings)
+- [安裝擴充功能](https://code.visualstudio.com/docs/editor/extension-gallery)
+- [修改其設定](https://code.visualstudio.com/docs/getstarted/settings)
 
-# License
+# 授權
 
 [GPL-3.0 with VS Code Extension Host API Exception](LICENSE.md) &copy; Alessandro Fragnani

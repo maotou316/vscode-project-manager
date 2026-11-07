@@ -47,5 +47,16 @@
     "filtered by tags": "filtered by tags",
     "Save the workspace first to save a project": "Save the workspace first to save a project",
     "Open a folder first to save a project": "Open a folder first to save a project",
-    "Save Project": "Save Project"
+    "Save Project": "Save Project",
+    "Become a Sponsor": "Become a Sponsor",
+    "Donate via PayPal": "Donate via PayPal",
+    "Get Started": "Get Started",
+    "Provide Feedback": "Provide Feedback",
+    "Review Issues": "Review Issues",
+    "Report Issue": "Report Issue",
+    "Support": "Support",
+    "Container": "Container",
+    "Virtual Workspace": "Virtual Workspace",
+    "Workspace": "Workspace",
+    "Folder": "Folder"
 }

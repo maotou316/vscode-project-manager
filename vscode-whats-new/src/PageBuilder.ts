@@ -13,6 +13,9 @@ export async function readRAWFileUri(uri: Uri): Promise<string> {
     return new TextDecoder('utf-8').decode(bytes);
 }
 
+// 更新記錄中的 Issue 與 PR 編號都屬於原作者的存放庫，不是這個分支
+const UPSTREAM_REPOSITORY_URL = "https://github.com/alefragnani/vscode-project-manager";
+
 export class WhatsNewPageBuilder {
 
     public static async newBuilder(webview: Webview, htmlFile: Uri): Promise<WhatsNewPageBuilder> {
@@ -101,17 +104,17 @@ export class WhatsNewPageBuilder {
                     const cc: ChangeLogIssue = <ChangeLogIssue>cl.detail;
                     if (cc.kind === IssueKind.Issue) {
                         message = `${cc.message}
-                            (<a title="Open Issue #${cc.id}" 
-                            href="${this.repositoryUrl}/issues/${cc.id}">Issue #${cc.id}</a>)`;
+                            （<a title="開啟 Issue #${cc.id}" 
+                            href="${UPSTREAM_REPOSITORY_URL}/issues/${cc.id}">Issue #${cc.id}</a>）`;
                     } else {
                         message = `${cc.message}
-                            (Thanks to ${cc.kudos} - <a title="Open PR #${cc.id}" 
-                            href="${this.repositoryUrl}/pull/${cc.id}">PR #${cc.id}</a>)`;
+                            （感謝 ${cc.kudos} - <a title="開啟 PR #${cc.id}" 
+                            href="${UPSTREAM_REPOSITORY_URL}/pull/${cc.id}">PR #${cc.id}</a>）`;
                     }
                 }
                 
                 changeLogString = changeLogString.concat(
-                    `<li><span class="changelog__badge changelog__badge--${badge}">${cl.kind}</span>
+                    `<li><span class="changelog__badge changelog__badge--${badge}">${this.getBadgeLabelFromChangeLogKind(cl.kind)}</span>
                         ${message}
                     </li>`
                 );
@@ -128,7 +131,7 @@ export class WhatsNewPageBuilder {
         }
 
         let sponsorsString = `<p>
-          <h2>Sponsors</h2>`;
+          <h2>贊助者</h2>`;
 
         for (const sp of sponsors) {
             if (sp.message) {
@@ -193,6 +196,22 @@ export class WhatsNewPageBuilder {
 
     public build(): string {
         return this.htmlFile.toString();
+    }
+
+    // 僅作為畫面顯示用的標籤文字，不影響 enum 值與 CSS class
+    private getBadgeLabelFromChangeLogKind(kind: ChangeLogKind): string {
+        switch (kind) {
+            case ChangeLogKind.NEW:
+                return "新增";
+            case ChangeLogKind.CHANGED:
+                return "變更";
+            case ChangeLogKind.FIXED:
+                return "修正";
+            case ChangeLogKind.INTERNAL:
+                return "內部";
+            default:
+                return kind;
+        }
     }
 
     private getBadgeFromChangeLogKind(kind: ChangeLogKind): string {

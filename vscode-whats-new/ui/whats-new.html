@@ -8,7 +8,7 @@
 *--------------------------------------------------------------------------------------------*/
 -->
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
     <div class="container">
         <div class="content">
             <header>
-                <a style="text-align: center;" title="Learn more about ${extensionDisplayName}" href="${repositoryUrl}">
+                <a style="text-align: center;" title="進一步了解 ${extensionDisplayName}" href="${repositoryUrl}">
                     <img src="${headerLogo}" width="${headerWidth}%" height="${headerHeight}%"/>
                 </a>
                 <p class="header__blurb">
@@ -31,7 +31,7 @@
                 <div class="section-group__content">
 
                         <section id="whats-new" class="changelog">
-                                <h2 class="changelog__title">What's New in <b>${extensionDisplayName} ${extensionVersion}</b></h2>
+                                <h2 class="changelog__title"><b>${extensionDisplayName} ${extensionVersion}</b> 的新功能</h2>
                                 <div class="changelog__scroller">
                                     <ul class="changelog__list">
                                         ${changeLog}
@@ -39,28 +39,28 @@
                                 </div>
                             </section>
 
-                            <h2>Need Help?</h2>
+                            <h2>需要協助？</h2>
                             <ul>
                                 <li>
-                                    <a href="${repositoryHomepage}">Homepage</a>
+                                    <a href="${repositoryHomepage}">首頁</a>
                                 </li>
                                 <li>
-                                    <a href="${repositoryIssues}">Questions &amp; Issues</a>
+                                    <a href="${repositoryIssues}">問題與疑難回報</a>
                                 </li>
                             </ul>
                             
                 </div>
                 <div class="section-group__sidebar section-group__sidebar--welcome">
                     <div class="sidebar-group">
-                        <h2>Show Your Support</h2>
+                        <h2>表達您的支援</h2>
                         <p>
-                            While <b>${extensionDisplayName}</b> is offered for free, 
-                            if you find it useful, please consider supporting it.
+                            <b>${extensionDisplayName}</b> 雖然免費提供，
+                            但若您覺得好用，歡迎考慮支援它。
                         </p>
                         ${supportChannels}
                         <ul>
-                            <li><a title="Write a review" href="https://marketplace.visualstudio.com/items?itemName=${publisher}.${extensionName}#review-details">Write a Review</a></li>
-                            <li><a title="Star or fork me on GitHub" href="${repositoryUrl}">Star or Fork me on GitHub</a></li>
+                            <li><a title="撰寫評論" href="https://marketplace.visualstudio.com/items?itemName=${publisher}.${extensionName}#review-details">撰寫評論</a></li>
+                            <li><a title="在 GitHub 上加星號或 Fork" href="${repositoryUrl}">在 GitHub 上加星號或 Fork</a></li>
                             ${socialMedias}
                         </ul>
                         ${sponsors}
