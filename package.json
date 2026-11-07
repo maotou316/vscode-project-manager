@@ -31,7 +31,7 @@
 			"supported": true
 		}
 	},
-	"icon": "docs/images/icon.png",
+	"icon": "docs/images/icon-maotou.png",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"homepage": "https://github.com/maotou316/vscode-project-manager/blob/release/maotou316/README.md",
 	"repository": {
